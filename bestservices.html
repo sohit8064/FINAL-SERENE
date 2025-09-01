@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Serene Sea - Global Freight Forwarding</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: '#1e5b94',
+                secondary: '#e67e22'
+            },
+            borderRadius: {
+                'none': '0px',
+                'sm': '4px',
+                DEFAULT: '8px',
+                'md': '12px',
+                'lg': '16px',
+                'xl': '20px',
+                '2xl': '24px',
+                '3xl': '32px',
+                'full': '9999px',
+                'button': '8px'
+            }
+        }
+    }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Poppins', sans-serif; }
+.hero-section {
+    background-image: url('https://readdy.ai/api/search-image?query=shipping%20port%20with%20cargo%20containers%20and%20large%20cranes%2C%20blue%20ocean%2C%20industrial%20shipping%20yard%2C%20logistics%20hub%2C%20clear%20sky%2C%20professional%20corporate%20scene%2C%20high%20quality%20realistic%20photography%2C%20no%20text&width=1600&height=800&seq=1234&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .hero-section { background-position: 70% center; }
+    .mobile-menu { display: none; }
+    .mobile-menu.active { display: flex; }
+}
+input:focus { outline: none; }
+
+/* Modal Container */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 450px; /* smaller width */
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Modal Header Space */
+.modal-header {
+  margin-bottom: 10px;
+}
+
+/* Prevent modal content touching top */
+.modal-content h2 {
+  margin-top: 0;
+}
+</style>
+</head>
+<body class="min-h-screen bg-gray-50">
+
+<!-- Top Bar -->
+<div class="bg-primary py-2 px-4 md:px-8 text-sm text-white hidden md:block">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-phone-line"></i></div>
+                <span>+91 8980888809</span>
+            </div>
+            <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-mail-line"></i></div>
+                <span>info@SereneSea.in</span>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4 text-sm">
+            <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-1"><i class="ri-time-line"></i></div>
+                <span>MON - SAT  7:00 A.M - 12:00 P.M</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <a href="https://wa.me/918980888809" class="hover:text-gray-200"><i class="ri-whatsapp-fill"></i></a>
+                <a href="mailto:Info@SereneSea.in" class="hover:text-gray-200"><i class="ri-mail-fill"></i></a>
+                <a href="https://www.linkedin.com/company/serene-sea-shipping/" class="hover:text-gray-200"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#"><img src="https://static.readdy.ai/image/cf193dcb287cf1282d22687033aaf80f/c33d88492b7db220482f2808d6cecf62.png" alt="Serene Sea Shipping" class="h-16"/></a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a class="text-primary font-medium py-2" href="index.html">Home</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="bestservices.html">Services</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="projectcargo.html">Projects</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="tracking.html">Tracking</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="about.html">About</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="contact.html">Contact</a>
+            </nav>
+            
+            <!-- Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="relative">
+                    <button class="flex items-center text-gray-700 border border-gray-300 rounded-button px-4 py-2">
+                        <span>English</span>
+                        <div class="w-4 h-4 flex items-center justify-center ml-2"><i class="ri-arrow-down-s-line"></i></div>
+                    </button>
+                </div>
+                <!-- Desktop Get Quote -->
+                <button onclick="openQuoteModal()" class="bg-primary text-white px-4 py-2 rounded-button flex items-center whitespace-nowrap">
+                    <div class="w-4 h-4 flex items-center justify-center mr-2"><i class="ri-message-3-line"></i></div>
+                    Get Quote
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden flex-col space-y-4 pb-4">
+            <a class="text-primary font-medium py-2" href="index.html">Home</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="bestservices.html">Services</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="projectcargo.html">Projects</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="tracking.html">Tracking</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="about.html">About</a>
+<a class="text-gray-700 hover:text-primary transition-colors py-2" href="contact.html">Contact</a>
+            <div class="flex flex-col space-y-3 pt-2">
+                <div class="relative">
+                    <button class="flex items-center text-gray-700 border border-gray-300 rounded-button px-4 py-2">
+                        <span>English</span>
+                        <div class="w-4 h-4 flex items-center justify-center ml-2"><i class="ri-arrow-down-s-line"></i></div>
+                    </button>
+                </div>
+                <!-- Mobile Get Quote -->
+                <button onclick="openQuoteModal()" class="bg-primary text-white px-4 py-2 rounded-button flex items-center">
+                    <div class="w-4 h-4 flex items-center justify-center mr-2"><i class="ri-file-list-3-line"></i></div>
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Get a Quote Modal -->
+<div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300 z-50">
+  <div id="quoteModalContent" class="bg-white rounded-lg shadow-lg w-full max-w-[520px] p-6 transform transition-all duration-300 scale-95 relative">
+    <button onclick="closeQuoteModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+    <h2 class="text-2xl font-bold mb-4">Get a Quote</h2>
+    <form id="quoteForm" class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+        <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="service" class="block text-sm font-medium text-gray-700">Service Type</label>
+        <select id="service" name="service" required class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+          <option value="">Select a service</option>
+          <option value="freight">Freight Forwarding</option>
+          <option value="customs">Customs Clearance</option>
+          <option value="warehousing">Warehousing</option>
+        </select>
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="message" name="message" rows="3" class="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <!-- ✅ Updated button color -->
+      <button class="bg-[#1e5b94] hover:bg-[#164b7d] text-white px-6 py-3 rounded-lg w-full font-semibold transition" type="submit">
+          Submit Quote Request
+      </button>
+    </form>
+    <div id="quoteThankYou" class="hidden text-center">
+      <h3 class="text-lg font-semibold mb-2">Thank You!</h3>
+      <p>Your request has been submitted successfully.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+@media (max-width: 640px) {
+  #quoteModalContent {
+    width: 95% !important;
+    padding: 15px !important;
+  }
+}
+</style>
+
+<script>
+const quoteModal = document.getElementById('quoteModal');
+const quoteModalContent = document.getElementById('quoteModalContent');
+const quoteForm = document.getElementById('quoteForm');
+const quoteThankYou = document.getElementById('quoteThankYou');
+
+function openQuoteModal() {
+  quoteModal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    quoteModal.classList.remove('opacity-0');
+    quoteModalContent.classList.remove('scale-95');
+  }, 10);
+}
+
+function closeQuoteModal() {
+  quoteModal.classList.add('opacity-0');
+  quoteModalContent.classList.add('scale-95');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    quoteModal.classList.add('hidden');
+    quoteForm.reset();
+    quoteForm.classList.remove('hidden');
+    quoteThankYou.classList.add('hidden');
+  }, 300);
+}
+
+quoteForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  quoteForm.classList.add('hidden');
+  quoteThankYou.classList.remove('hidden');
+  setTimeout(closeQuoteModal, 2000);
+});
+
+// ✅ Close modal when clicking outside
+quoteModal.addEventListener('click', (e) => {
+  if (e.target === quoteModal) {
+    closeQuoteModal();
+  }
+});
+</script>
+
+
+</body>
+</html>
+  <section class="hero-section relative">
+   <div class="absolute inset-0 bg-primary bg-opacity-70">
+   </div>
+   <div class="container mx-auto px-4 md:px-8 relative z-10 py-16 md:py-24">
+    <div class="w-full max-w-2xl text-white">
+     <h1 class="text-3xl md:text-5xl font-bold mb-4">
+      Comprehensive Ocean Freight Solutions
+     </h1>
+     <p class="text-lg md:text-xl mb-8">
+Our comprehensive ocean freight services offer the most efficient, reliable, and secure shipping solutions, tailored to meet your unique global trade requirements.
+     </p>
+<!-- BUTTONS -->
+     <div class="flex flex-wrap gap-3 md:gap-4">
+      <!-- Track Shipment Button -->
+      <button class="max-w-full px-6 rounded py-3 bg-white text-primary font-medium" onclick="openTrackModal()">
+       <i class="ri-search-line mr-2">
+       </i>
+       Track Shipment
+      </button>
+      <!-- Request Quote Button -->
+      <a class="bg-secondary text-white py-3 px-6 !rounded-button font-medium flex items-center whitespace-nowrap hover:bg-secondary/90 transition" href="bestservices.html#service-inquiry">
+       <div class="w-5 h-5 flex items-center justify-center mr-2">
+        <i class="ri-arrow-down-line">
+        </i>
+       </div>
+       Request Quote
+      </a>
+     </div>
+     <!-- Track Shipment Modal -->
+     <div class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50" id="trackModal" onclick="closeTrackModal()">
+      <div class="bg-white p-6 rounded-xl w-full max-w-md relative shadow-lg" onclick="event.stopPropagation()">
+       <button class="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl font-bold" onclick="closeTrackModal()">
+        ×
+       </button>
+       <h2 class="text-xl font-semibold mb-4">
+        Track Shipment
+       </h2>
+       <form onsubmit="event.preventDefault(); handleTrackShipment();">
+        <label class="block text-gray-700 mb-2" for="tracking-number">
+         Tracking Number
+        </label>
+        <input class="w-full border border-gray-300 rounded px-3 py-2 mb-2" id="tracking-number" name="tracking-number" placeholder="Enter your tracking number" required="" type="text"/>
+        <p class="text-red-500 text-sm mb-4 hidden" id="error-message">
+         Invalid tracking number. Please try again.
+        </p>
+        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90" type="submit">
+         Track
+        </button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script>
+   function openTrackModal() {
+        const modal = document.getElementById("trackModal");
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+        }
+      }
+    
+      function closeTrackModal() {
+        const modal = document.getElementById("trackModal");
+        if (modal) {
+          modal.classList.remove("flex");
+          modal.classList.add("hidden");
+        }
+      }
+    
+      function handleTrackShipment() {
+        const input = document.getElementById("tracking-number");
+        const trackingNumber = input.value.trim();
+        const errorMessage = document.getElementById("error-message");
+    
+        if (trackingNumber === "") {
+          errorMessage.textContent = "Please enter a tracking number.";
+          errorMessage.classList.remove("hidden");
+        } else {
+          errorMessage.textContent = "Invalid tracking number. Please try again.";
+          errorMessage.classList.remove("hidden");
+          input.value = ""; // ✅ Clears the input after showing the error
+        }
+      }
+  </script>
+  <main class="flex-grow">
+   <!-- Services Navigation Tabs -->
+<div class="bg-white py-8" id="services">
+  <div class="mx-auto px-4 md:px-8 container">
+    <!-- Desktop View (no scroll) -->
+    <div class="hidden md:flex justify-center gap-4">
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="bestservices.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-ship-line"></i></div>
+          Ocean Freight
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="airfreight.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-plane-line"></i></div>
+          Air Freight
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="landtransport.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-truck-line"></i></div>
+          Land Transport
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="customclearance.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-file-list-3-line"></i></div>
+          Customs Clearance
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="warehousing.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-store-3-line"></i></div>
+          Warehousing
+        </div>
+      </a>
+    </div>
+
+    <!-- Mobile View (scrollable, no scrollbar) -->
+    <div class="flex md:hidden overflow-x-auto gap-2 no-scrollbar pb-2">
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="bestservices.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-ship-line"></i></div>
+          Ocean Freight
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="airfreight.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-plane-line"></i></div>
+          Air Freight
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="landtransport.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-truck-line"></i></div>
+          Land Transport
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="customclearance.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-file-list-3-line"></i></div>
+          Customs Clearance
+        </div>
+      </a>
+      <a class="service-tab bg-gray-100 py-3 px-6 rounded-full whitespace-nowrap transition hover:bg-gray-200" href="warehousing.html">
+        <div class="flex items-center">
+          <div class="w-5 h-5 flex items-center justify-center mr-2"><i class="ri-store-3-line"></i></div>
+          Warehousing
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Service Detail Section - Ocean Freight -->
+<div class="pt-12 pb-0">
+<div class="w-full px-4 mx-auto">
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="lg:w-2/3">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Ocean Freight Services</h2>
+<p class="text-gray-600 mb-6">Our comprehensive ocean freight solutions offer reliable and cost-effective shipping options for businesses of all sizes. Whether you need to transport full container loads (FCL) or less than container loads (LCL), our global network ensures your cargo reaches its destination safely and on schedule.</p>
+<!-- Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<!-- Full Container Load -->
+<div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-ship-line text-primary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Full Container Load (FCL)</h3>
+<p class="text-gray-600 mb-4">Dedicated containers for your exclusive use, providing security and efficiency for larger shipments.</p>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">20ft, 40ft, and 40ft High Cube containers</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">Door-to-door delivery options</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">Competitive transit times</span>
+</li>
+</ul>
+<p class="text-gray-700 font-medium mb-2">Starting from:</p>
+<p class="text-primary text-xl font-bold mb-4">$1,200 USD</p>
+<button class="w-full bg-primary text-white py-2 px-4 !rounded-button flex items-center justify-center whitespace-nowrap hover:bg-primary/90 transition"
+        onclick="document.getElementById('service-inquiry').scrollIntoView({ behavior: 'smooth' });">
+  <div class="w-5 h-5 flex items-center justify-center mr-2">
+    <i class="ri-file-list-3-line"></i>
+  </div>
+  Request FCL Quote
+</button>
+</div>
+<!-- Less Container Load -->
+<div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-box-3-line text-primary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Less than Container Load (LCL)</h3>
+<p class="text-gray-600 mb-4">Cost-effective solution for smaller shipments, sharing container space with other cargo.</p>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">Flexible volume options</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">Consolidated shipping services</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600">Economical for smaller shipments</span>
+</li>
+</ul>
+<p class="text-gray-700 font-medium mb-2">Starting from:</p>
+<p class="text-primary text-xl font-bold mb-4">$45 USD per CBM</p>
+<button class="w-full bg-primary text-white py-2 px-4 !rounded-button flex items-center justify-center whitespace-nowrap hover:bg-primary/90 transition"
+        onclick="document.getElementById('service-inquiry').scrollIntoView({ behavior: 'smooth' });">
+  <div class="w-5 h-5 flex items-center justify-center mr-2">
+    <i class="ri-file-list-3-line"></i>
+  </div>
+  Request LCL Quote
+</button>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Special Equipment &amp; Services</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+<div class="bg-white rounded-lg p-4 border border-gray-100">
+<div class="flex items-center mb-3">
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full mr-3">
+<i class="ri-temp-cold-line text-primary"></i>
+</div>
+<h4 class="font-semibold text-gray-800">Reefer Containers</h4>
+</div>
+<p class="text-gray-600 text-sm">Temperature-controlled shipping for perishable goods</p>
+</div>
+<div class="bg-white rounded-lg p-4 border border-gray-100">
+<div class="flex items-center mb-3">
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full mr-3">
+<i class="ri-open-door-line text-primary"></i>
+</div>
+<h4 class="font-semibold text-gray-800">Open Top Containers</h4>
+</div>
+<p class="text-gray-600 text-sm">For oversized cargo that needs top loading</p>
+</div>
+<div class="bg-white rounded-lg p-4 border border-gray-100">
+<div class="flex items-center mb-3">
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full mr-3">
+<i class="ri-layout-bottom-line text-primary"></i>
+</div>
+<h4 class="font-semibold text-gray-800">Flat Rack Containers</h4>
+</div>
+<p class="text-gray-600 text-sm">For heavy machinery and oversized cargo</p>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Ocean Freight Process</h3>
+<div class="relative pb-8">
+<div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+<div class="relative flex items-start mb-6">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white z-10 mr-4">1</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-800 mb-1">Booking &amp; Documentation</h4>
+<p class="text-gray-600">We handle all necessary documentation including Bill of Lading, customs forms, and shipping permits.</p>
+</div>
+</div>
+<div class="relative flex items-start mb-6">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white z-10 mr-4">2</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-800 mb-1">Cargo Collection &amp; Loading</h4>
+<p class="text-gray-600">Your cargo is collected, properly packed, and loaded into containers with care and precision.</p>
+</div>
+</div>
+<div class="relative flex items-start mb-6">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white z-10 mr-4">3</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-800 mb-1">Ocean Transit</h4>
+<p class="text-gray-600">Your shipment is transported via our trusted carrier network with real-time tracking available.</p>
+</div>
+</div>
+<div class="relative flex items-start">
+<div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white z-10 mr-4">4</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-800 mb-1">Customs Clearance &amp; Delivery</h4>
+<p class="text-gray-600">We manage customs procedures and arrange final delivery to your specified destination.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 mb-8">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Ocean Freight Case Study</h3>
+<div class="mb-4">
+<h4 class="font-semibold text-gray-800 mb-1">Client: Global Electronics Manufacturer</h4>
+<p class="text-gray-600 mb-4">A leading electronics manufacturer needed to transport 25 containers of components from Shanghai to Mumbai on a monthly basis.</p>
+<h5 class="font-medium text-gray-800 mb-1">Challenge:</h5>
+<p class="text-gray-600 mb-3">The client required consistent delivery schedules with minimal transit time variations to maintain their just-in-time manufacturing process.</p>
+<h5 class="font-medium text-gray-800 mb-1">Solution:</h5>
+<p class="text-gray-600 mb-3">Serene Sea implemented a dedicated FCL service with priority loading arrangements and detailed contingency planning for potential delays.</p>
+<h5 class="font-medium text-gray-800 mb-1">Result:</h5>
+<p class="text-gray-600">Achieved 98.5% on-time delivery rate, reducing the client's inventory holding costs by 15% and improving production efficiency.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Certifications &amp; Compliance</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
+<i class="ri-verified-badge-line text-primary text-2xl"></i>
+</div>
+<span class="text-sm text-gray-600 text-center">ISO 9001:2015</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
+<i class="ri-shield-check-line text-primary text-2xl"></i>
+</div>
+<span class="text-sm text-gray-600 text-center">IATA Certified</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
+<i class="ri-recycle-line text-primary text-2xl"></i>
+</div>
+<span class="text-sm text-gray-600 text-center">ISO 14001</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-full mb-2">
+<i class="ri-ship-2-line text-primary text-2xl"></i>
+</div>
+<span class="text-sm text-gray-600 text-center">FIATA Member</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/3">
+<div class="sticky top-6">
+<div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100 mb-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Ocean Freight Coverage</h3>
+<div class="mb-4 h-64 rounded overflow-hidden">
+<div class="w-full h-full" id="coverage-map" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"></div>
+</div>
+<h4 class="font-medium text-gray-800 mb-2">Major Trade Routes:</h4>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-route-line"></i>
+</div>
+<span class="text-gray-600">Asia - Europe</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-route-line"></i>
+</div>
+<span class="text-gray-600">Asia - North America</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-route-line"></i>
+</div>
+<span class="text-gray-600">Europe - North America</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-route-line"></i>
+</div>
+<span class="text-gray-600">Intra-Asia</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mr-2 mt-0.5">
+<i class="ri-route-line"></i>
+</div>
+<span class="text-gray-600">Middle East - Asia</span>
+</li>
+</ul>
+<h4 class="font-medium text-gray-800 mb-2">Average Transit Times:</h4>
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="text-gray-600">Shanghai to Los Angeles</span>
+<span class="text-primary font-medium">14-16 days</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-600">Rotterdam to New York</span>
+<span class="text-primary font-medium">10-12 days</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-600">Singapore to Mumbai</span>
+<span class="text-primary font-medium">7-9 days</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-600">Dubai to Cape Town</span>
+<span class="text-primary font-medium">15-18 days</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-sm p-6 border border-gray-100 mb-6">
+<h3 class="text-xl font-semibold text-gray-800 mb-4">Performance Metrics</h3>
+<div class="space-y-4">
+<!-- On-Time Delivery -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-gray-700">On-Time Delivery</span>
+<span class="font-medium text-primary">98.7%</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 98.7%"></div>
+</div>
+</div>
+<!-- Documentation Accuracy -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-gray-700">Documentation Accuracy</span>
+<span class="font-medium text-primary">99.5%</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width: 99.5%"></div>
+</div>
+</div>
+<!-- Customer Satisfaction -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="text-gray-700">Customer Satisfaction</span>
+<span class="font-medium text-primary">96.2%</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 96.2%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary rounded-lg p-6 text-white">
+<h3 class="text-xl font-semibold mb-4">Need Assistance?</h3>
+<p class="mb-4">Our ocean freight specialists are ready to help you with your shipping requirements.</p>
+<div class="space-y-3 mb-6">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line"></i>
+</div>
+<a class="hover:underline" href="tel:+918980888809">+91 8980888809</a>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line"></i>
+</div>
+<a class="hover:underline" href="mailto:Info@serenesea.in">Info@serenesea.in</a>
+</div>
+</div>
+<button class="w-full bg-white text-primary py-2 px-4 !rounded-button flex items-center justify-center whitespace-nowrap hover:bg-gray-100 transition" id="contact-specialist-btn">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-customer-service-2-line"></i>
+</div>
+Contact Specialist
+</button>
+<!-- Specialist Contact Modal -->
+<div class="fixed inset-0 z-[99999] bg-black bg-opacity-60 backdrop-blur-sm flex items-start justify-center overflow-y-auto pt-[100px] pb-10 hidden" id="specialist-modal">
+<div class="bg-white rounded-lg shadow-xl w-full max-w-lg mx-4 max-h-[calc(100vh-150px)] overflow-y-auto relative">
+<div class="bg-primary text-white px-6 py-4 flex justify-between items-center">
+<h3 class="text-xl font-semibold">Contact Ocean Freight Specialist</h3>
+<button class="text-white hover:text-gray-200" id="close-specialist-modal">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<div class="p-6">
+<div class="mb-6 bg-blue-50 p-4 rounded-lg">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+<i class="ri-user-3-line text-primary text-xl"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-1">Rahul Sharma</h4>
+<p class="text-gray-600 text-sm mb-2">Senior Ocean Freight Specialist</p>
+<div class="flex items-center text-sm text-gray-600 mb-1">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<a class="hover:text-primary" href="tel:+918980888810">+91 8980888810</a>
+</div>
+<div class="flex items-center text-sm text-gray-600">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<a class="hover:text-primary" href="mailto:Cs@serenesea.in">Cs@serenesea.in</a>
+</div>
+</div>
+</div>
+<div class="mt-3 text-sm text-gray-600 flex items-center">
+<div class="w-4 h-4 flex items-center justify-center mr-2 text-green-500">
+<i class="ri-time-line"></i>
+</div>
+<span>Typical response time: <span class="font-medium">2-4 hours</span></span>
+</div>
+</div>
+<form id="specialist-contact-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="specialist-name">Your Name*</label>
+<input class="w-full bg-white text-gray-800 border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-primary" id="specialist-name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="specialist-company">Company Name</label>
+<input class="w-full bg-white text-gray-800 border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-primary" id="specialist-company" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="specialist-email">Email Address*</label>
+<input class="w-full bg-white text-gray-800 border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-primary" id="specialist-email" required="" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="specialist-phone">Phone Number*</label>
+<input class="w-full bg-white text-gray-800 border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-primary" id="specialist-phone" required="" type="tel"/>
+</div>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2" for="specialist-message">Your Message*</label>
+<textarea class="w-full bg-white text-gray-800 border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-primary" id="specialist-message" placeholder="Please describe your shipping requirements or questions" required="" rows="4"></textarea>
+</div>
+<div class="mb-4">
+<label class="block text-gray-700 font-medium mb-2">Preferred Contact Method</label>
+<div class="flex flex-wrap gap-4">
+<label class="inline-flex items-center group relative">
+<input checked="" class="custom-radio" name="contact-method" type="radio" value="email"/>
+<span class="ml-2 text-gray-700">Email</span>
+<div class="absolute bottom-full left-0 mb-2 w-48 bg-white text-xs text-gray-600 p-2 rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
+We'll respond to the email address you provided above
+</div>
+</label>
+<label class="inline-flex items-center group relative">
+<input class="custom-radio" name="contact-method" type="radio" value="phone"/>
+<span class="ml-2 text-gray-700">Phone</span>
+<div class="absolute bottom-full left-0 mb-2 w-48 bg-white text-xs text-gray-600 p-2 rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
+Our specialist will call you directly
+</div>
+</label>
+<label class="inline-flex items-center group relative">
+<input class="custom-radio" name="contact-method" type="radio" value="whatsapp"/>
+<span class="ml-2 flex items-center text-gray-700">
+<i class="ri-whatsapp-fill text-green-500 mr-1"></i>
+  WhatsApp
+</span>
+<div class="absolute bottom-full left-0 mb-2 w-48 bg-white text-xs text-gray-600 p-2 rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none">
+We'll contact you via WhatsApp message
+</div>
+</label>
+</div>
+<!-- Toast Message: Thank You -->
+<div class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg hidden z-[999999]" id="thank-you-toast">
+  Thank you! Your message has been sent.
+</div>
+<!-- Contact method info will be inserted here by JavaScript -->
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2">Preferred Contact Time</label>
+<div class="flex flex-wrap gap-4">
+<label class="inline-flex items-center">
+<input checked="" class="custom-radio" name="contact-time" type="radio" value="morning"/>
+<span class="ml-2 text-gray-700">Morning (7AM-11AM)</span>
+</label>
+<label class="inline-flex items-center">
+<input class="custom-radio" name="contact-time" type="radio" value="afternoon"/>
+<span class="ml-2 text-gray-700">Afternoon (11AM-3PM)</span>
+</label>
+<label class="inline-flex items-center">
+<input class="custom-radio" name="contact-time" type="radio" value="evening"/>
+<span class="ml-2 text-gray-700">Evening (3PM-7PM)</span>
+</label>
+</div>
+</div>
+<div class="flex justify-end">
+<button class="bg-primary text-white py-2 px-6 !rounded-button font-medium flex items-center whitespace-nowrap hover:bg-primary/90 transition" type="submit">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-send-plane-line"></i>
+</div>
+Send Message
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Thank You Modal -->
+<div class="fixed inset-0 z-[99999] bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden" id="thank-you-modal">
+<div class="bg-white rounded-lg shadow-xl w-full max-w-lg mx-4 max-h-[calc(100vh-150px)] overflow-y-auto relative p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold">Thank You!</h3>
+<button class="text-gray-700 hover:text-gray-500" id="close-thank-you-modal">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-close-line text-xl"></i>
+</div>
+</button>
+</div>
+<p class="text-gray-700">Your message has been successfully sent. Our Ocean Freight Specialist will get in touch with you soon.</p>
+<div class="flex justify-end mt-6">
+<button class="bg-primary text-white py-2 px-6 rounded-lg hover:bg-primary/90 transition" id="close-thank-you-modal-btn">
+        Close
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Open Modal
+  const openBtn = document.getElementById("contact-specialist-btn"); // The button that opens the modal
+  const closeBtn = document.getElementById("close-specialist-modal");
+  const modal = document.getElementById("specialist-modal");
+  const modalContent = modal.querySelector(".bg-white");
+
+  openBtn?.addEventListener("click", () => {
+    modal.classList.remove("hidden"); // Show the modal
+    document.body.style.overflow = "hidden"; // Disable background scrolling
+  });
+
+  // Close Modal
+  closeBtn?.addEventListener("click", () => {
+    modal.classList.add("hidden"); // Hide the modal
+    document.body.style.overflow = ""; // Enable background scrolling
+  });
+
+  // Close Modal when clicking outside the modal content
+  modal?.addEventListener("click", (e) => {
+    if (!modalContent.contains(e.target)) {
+      modal.classList.add("hidden");
+      document.body.style.overflow = ""; // Enable background scrolling
+    }
+  });
+
+  // Handle form submission
+  const form = document.getElementById("specialist-contact-form");
+  const thankYouModal = document.getElementById("thank-you-modal");
+  const closeThankYouModal = document.getElementById("close-thank-you-modal");
+  const closeThankYouModalBtn = document.getElementById("close-thank-you-modal-btn");
+
+  form?.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from refreshing the page
+
+    // Disable submit button to prevent multiple clicks
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Sending...";
+
+    // Simulate form submission (replace with AJAX request)
+    setTimeout(() => {
+      // Show Thank You Modal
+      thankYouModal.classList.remove("hidden");
+      thankYouModal.classList.add("flex");
+
+      // Reset form
+      form.reset();
+
+      // Re-enable submit button
+      submitButton.disabled = false;
+      submitButton.innerHTML = "Send Message";
+
+      // Hide the Thank You modal after 3 seconds
+      setTimeout(() => {
+        thankYouModal.classList.add("hidden");
+      }, 3000);
+    }, 500); // Simulated delay
+  });
+
+  // Close Thank You Modal
+  closeThankYouModal.addEventListener("click", () => {
+    thankYouModal.classList.add("hidden");
+  });
+
+  closeThankYouModalBtn.addEventListener("click", () => {
+    thankYouModal.classList.add("hidden");
+  });
+</script>
+<!-- Service Inquiry Form -->
+<div class="bg-gray-50 py-16" id="service-inquiry">
+<div class="w-full px-4 mx-auto">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Request a Detailed Service Quote</h2>
+<p class="text-gray-600">Fill out the form below to receive a customized shipping solution tailored to your specific requirements.</p>
+</div>
+<div class="bg-white rounded-lg shadow-md p-8">
+<form id="quoteSectionForm">
+<!-- Origin & Destination -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="origin">Origin*</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="origin" placeholder="City, Country" required="" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="destination">Destination*</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="destination" placeholder="City, Country" required="" type="text"/>
+</div>
+</div>
+<!-- Weight & Dimensions -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="weight">Weight (kg)</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="weight" placeholder="Total weight in kg" type="number"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="dimensions">Dimensions (cm)</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="dimensions" placeholder="L x W x H" type="text"/>
+</div>
+</div>
+<!-- Shipment Size & Hazardous Materials -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2">Shipment Size</label>
+<div class="flex items-center space-x-4">
+<label class="inline-flex items-center">
+<input class="custom-radio" name="shipment-size" type="radio"/>
+<span class="ml-2 text-gray-700">Small</span>
+</label>
+<label class="inline-flex items-center">
+<input checked="" class="custom-radio" name="shipment-size" type="radio"/>
+<span class="ml-2 text-gray-700">Medium</span>
+</label>
+<label class="inline-flex items-center">
+<input class="custom-radio" name="shipment-size" type="radio"/>
+<span class="ml-2 text-gray-700">Large</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2">Hazardous Materials?</label>
+<div class="flex items-center space-x-4 mb-4">
+<label class="inline-flex items-center">
+<input class="custom-radio" name="hazardous" type="radio" value="yes"/>
+<span class="ml-2 text-gray-700">Yes</span>
+</label>
+<label class="inline-flex items-center">
+<input checked="" class="custom-radio" name="hazardous" type="radio" value="no"/>
+<span class="ml-2 text-gray-700">No</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Service Type & Cargo Type -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="service-type">Service Type</label>
+<div class="relative">
+<select class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/30 focus:border-primary appearance-none pr-8" id="service-type">
+<option disabled="" selected="" value="">Select service type</option>
+<option>Ocean Freight - LCL</option>
+<option>Air Freight</option>
+<option>Land Transport</option>
+<option>Customs Clearance</option>
+<option>Warehousing</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="cargo-type">Cargo Type</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="cargo-type" placeholder="e.g., Electronics, Textiles, Machinery" type="text"/>
+</div>
+</div>
+<!-- Special Requirements & Contact Details -->
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2" for="special-requirements">Special Requirements</label>
+<textarea class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="special-requirements" placeholder="Any specific requirements or instructions for your shipment" rows="4"></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="name">Full Name</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="name" placeholder="Your full name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="company">Company Name</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="company" placeholder="Your company name" type="text"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="email">Email Address*</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="email" placeholder="Your email address" required="" type="email"/>
+</div>
+<div>
+<label class="block text-gray-700 font-medium mb-2" for="phone">Phone Number*</label>
+<input class="w-full bg-white border border-gray-300 rounded py-3 px-4 focus:outline-none focus:border-primary" id="phone" placeholder="Your phone number" required="" type="tel"/>
+</div>
+</div>
+<div class="mb-6">
+<label class="inline-flex items-center">
+<input checked="" class="custom-checkbox" type="checkbox"/>
+<span class="ml-2 text-gray-600">I agree to receive communications about Serene Sea services and promotions.</span>
+</label>
+</div>
+<div class="flex justify-center">
+<button class="bg-primary text-white py-3 px-6 !rounded-button font-medium flex items-center justify-center whitespace-nowrap hover:bg-primary/90 transition w-full md:w-auto" type="submit">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-send-plane-line"></i>
+</div>
+              Submit Inquiry
+            </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Success Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden" id="quoteSectionSuccessModal">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+<div class="text-center mb-6">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-check-line text-green-500 text-3xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Quote Request Submitted!</h3>
+<p class="text-gray-600">Thank you for your request. Our team will contact you within 24 hours to get you best quote.</p>
+</div>
+<div class="border-t border-gray-200 pt-4">
+<h4 class="font-medium text-gray-900 mb-2">Next Steps:</h4>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-sm text-gray-600">Our Team will review your Quote</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-sm text-gray-600">You'll receive a detailed quote via email</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5 mr-2">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-sm text-gray-600">We'll follow up with a call to discuss options</span>
+</li>
+</ul>
+</div>
+<button class="w-full bg-primary text-white py-3 !rounded-button font-medium hover:bg-primary/90 transition" id="quoteSectionCloseSuccessModal">Close</button>
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('quoteSectionForm');
+    const successModal = document.getElementById('quoteSectionSuccessModal');
+    const closeSuccessModal = document.getElementById('quoteSectionCloseSuccessModal');
+
+    // When the form is submitted, display the success modal
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();  // Prevent the default form submission
+
+      // Show the success modal
+      successModal.classList.remove('hidden');
+      successModal.classList.add('flex');
+      
+      // Reset the form after submission
+      form.reset();
+    });
+
+    // When the Close button on the modal is clicked, hide the modal
+    closeSuccessModal.addEventListener('click', function () {
+      successModal.classList.add('hidden');
+      successModal.classList.remove('flex');
+    });
+  });
+</script>
+<!-- Additional Services Section -->
+<div class="pt-16 pb-0">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Complementary Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Enhance your shipping experience with our additional service offerings that provide end-to-end logistics solutions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-shield-check-line text-primary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Cargo Insurance</h3>
+<p class="text-gray-600 mb-4">Comprehensive coverage options to protect your valuable shipments against loss or damage during transit.</p>
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+</div>
+
+</div>
+<div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-global-line text-primary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Supply Chain Consulting</h3>
+<p class="text-gray-600 mb-4">Expert advice to optimize your logistics operations, reduce costs, and improve efficiency across your supply chain.</p>
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class=""></i>
+</div>
+
+</div>
+<div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-file-paper-2-line text-primary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Trade Documentation</h3>
+<p class="text-gray-600 mb-4">Comprehensive assistance with all required shipping documentation, ensuring compliance with international regulations.</p>
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class=""></i>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="bg-primary py-16">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold text-white mb-6">Ready to Streamline Your Shipping?</h2>
+<p class="text-white/90 max-w-2xl mx-auto mb-8">Partner with Serene Sea for reliable, efficient, and cost-effective logistics solutions tailored to your business needs.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+<a class="bg-white text-primary py-3 px-6 !rounded-button font-medium flex items-center justify-center whitespace-nowrap hover:bg-gray-100 transition" href="tel:+918980888809">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+Call Us Now
+</a>
+<a class="bg-secondary text-white py-3 px-6 !rounded-button font-medium flex items-center justify-center whitespace-nowrap hover:bg-secondary/90 transition" href="#service-inquiry">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-file-list-3-line"></i>
+</div>
+Request Quote
+</a>
+</div>
+</div>
+</div>
+</div></div></div></main></main>
+ <footer class="bg-gray-900 text-white pt-10 md:pt-16 pb-6 md:pb-8">
+   <div class="mx-auto px-4 md:px-8 container">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-12">
+     <div>
+      <a class="mb-4 block font-['Pacifico'] text-white text-2xl" href="#">
+       Serene Sea Shipping
+      </a>
+      <p class="text-gray-200 mb-6">
+       Your trusted freight forwarding partner with over 10+ years of
+            experience connecting India to the world through reliable shipping
+            solutions.
+      </p>
+      <div class="flex space-x-4">
+       <a class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition" href="https://wa.me/918980888809">
+        <div class="w-5 h-5 flex items-center justify-center">
+         <i class="ri-whatsapp-fill">
+         </i>
+        </div>
+       </a>
+       <a class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition" href="https://www.linkedin.com/company/serene-sea-shipping/">
+        <div class="w-5 h-5 flex items-center justify-center">
+         <i class="ri-linkedin-fill">
+         </i>
+        </div>
+       </a>
+       <a class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition" href="mailto:Info@SereneSea.in">
+        <div class="w-5 h-5 flex items-center justify-center">
+         <i class="ri-mail-fill">
+         </i>
+        </div>
+       </a>
+       <a class="w-10 h-10 rounded-full bg-primary/30 flex items-center justify-center hover:bg-white hover:text-primary transition" href="https://www.instagram.com/serenesea.in?igsh=b3VzdWNleHF1ZzB4">
+        <div class="w-5 h-5 flex items-center justify-center">
+         <i class="ri-instagram-line">
+         </i>
+        </div>
+       </a>
+      </div>
+     </div>
+     <div>
+      <h4 class="text-lg font-semibold mb-4">
+       Quick Links
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="about.html">
+         About Us
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="bestservices.html">
+         Services
+        </a>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="tracking.html">
+          Track Shipment
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="services.html#service-inquiry">
+          Request Quote
+         </a>
+        </li>
+        <li>
+         <a class="text-gray-400 hover:text-white transition" href="contact.html">
+          Contact Us
+         </a>
+        </li>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold mb-4">
+       Our Services
+      </h3>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="services.html">
+         Ocean Freight
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="airfreight.html">
+         Air Freight
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="landtransport.html">
+         Land Transport
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="warehousing.html">
+         Warehousing
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="customclearance.html">
+         Customs Clearance
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-400 hover:text-white transition" href="projectcargo.html">
+         Project Logistics
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div>
+       <h3 class="text-lg font-semibold mb-4">
+        Contact Information
+       </h3>
+       <ul class="space-y-3">
+        <li class="flex">
+         <div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+          <i class="ri-map-pin-line text-secondary">
+          </i>
+         </div>
+         <span class="text-gray-400">
+          Tolani Chamber, Office no. 122, Near B.M Petrol Pump Gandhidham, Kutch-Gujarat 370201
+         </span>
+        </li>
+        <li class="flex">
+         <div class="w-5 h-5 flex items-center justify-center mr-3">
+          <i class="ri-phone-line text-secondary">
+          </i>
+         </div>
+         <a class="text-gray-400 hover:text-white transition" href="tel:+918980888809">
+          +91 8980888809
+         </a>
+        </li>
+        <li class="flex">
+         <div class="w-5 h-5 flex items-center justify-center mr-3">
+          <i class="ri-mail-line text-secondary">
+          </i>
+         </div>
+         <a class="text-gray-400 hover:text-white transition" href="mailto:info@serenesea.in">
+          info@serenesea.in
+         </a>
+        </li>
+        <li class="flex">
+         <div class="w-5 h-5 flex items-center justify-center mr-3">
+          <i class="ri-mail-line text-secondary">
+          </i>
+         </div>
+         <a class="text-gray-400 hover:text-white transition" href="mailto:cs@serenesea.in">
+          cs@serenesea.in
+         </a>
+        </li>
+        <li class="flex">
+         <div class="w-5 h-5 flex items-center justify-center mr-3">
+          <i class="ri-time-line text-secondary">
+          </i>
+         </div>
+         <span class="text-gray-400">
+          MON - SAT 7:00 A.M - 12:00 P.M
+         </span>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="utf-8"/>
+  <title>
+   Thank You!
+  </title>
+  <script src="https://cdn.tailwindcss.com/3.4.16">
+  </script>
+  <script>
+   tailwind.config={theme:{extend:{colors:{primary:'#1e5b94',secondary:'#e67e22'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}
+  </script>
+  <style>
+   :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-section {
+            background-image: url('https://readdy.ai/api/search-image?query=shipping%20port%20with%20cargo%20containers%20and%20large%20cranes%2C%20blue%20ocean%2C%20industrial%20shipping%20yard%2C%20logistics%20hub%2C%20clear%20sky%2C%20professional%20corporate%20scene%2C%20high%20quality%20realistic%20photography%2C%20no%20text&width=1600&height=800&seq=1234&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                background-position: 70% center;
+            }
+            .mobile-menu {
+                display: none;
+            }
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+        input:focus {
+            outline: none;
+        }
+  </style>
+ </head>
+ <body class="overflow-x-hidden min-h-screen">
+  <h2>
+   Thank you for subscribing!
+  </h2>
+  <p>
+   We’ve added you to our mailing list.
+  </p>
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenuButton.innerHTML = '<i class="ri-close-line text-2xl"></i>';
+                } else {
+                    mobileMenuButton.innerHTML = '<i class="ri-menu-line text-2xl"></i>';
+                }
+            });
+        });
+  </script>
+ </body>
+</html>
